@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    <script>
+
+        function Hewan(nama, suara) {
+            this.nama = nama;
+            this.suara = suara;
+            this.bersuara = function(bunyi){
+                console.log(`hewan ${nama} suaranya ${bunyi}`)
+            }
+        }
+
+        Hewan.prototype.mimi = function(){
+            console.log(bunyi)
+        }
+
+        Hewan.prototype.buddy = function(){
+            console.log(bunyi)
+        }
+
+        const kucing = new Hewan("Mimi", "Meow")
+        kucing.bersuara("Meow")
+        console.log(kucing)
+
+        const anjing = new Hewan("Buddy", "Woof")
+        anjing.bersuara("Woof")
+        console.log(anjing)
+
+
+    </script>
+</body>
+</html>

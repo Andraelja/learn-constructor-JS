@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor dalam Method</title>
+</head>
+<body>
+    <script>
+
+        function Product(){
+            this.name = ""
+            this.harga = ""
+            this.description = function(cust){
+                console.log(`Hallo ${cust} Untuk nama Produk ${this.name} dan harga ${this.harga}`)
+                
+            }
+        }
+        const desc = new Product();
+        desc.name = "Laptop"
+        desc.harga = "15.000.000"
+        desc.description("Andra");
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor di Class</title>
+</head>
+<body>
+    <script>
+
+        class Mobil {
+            constructor (merk, tahun, warna) {
+                    this.merk = merk;
+                    this.tahun = tahun;
+                    this.warna = warna;
+            }
+            car = function () {
+                console.log(`Merk mobil anda ${this.merk}, tahun ${this.tahun} dan warna ${this.warna}`)
+            }
+        }
+
+        const toyota = new Mobil("Toyota", "2022", "Hitam")
+        console.log(toyota)
+
+        toyota.car("Toyota", "2022", "Hitam")
+
+        const honda = new Mobil("Honda", "2023", "Putih")
+        console.log(honda)
+
+        toyota.car("Honda", "2023", "Putih")
+
+    </script>
+</body>
+</html>
